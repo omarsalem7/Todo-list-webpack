@@ -16,7 +16,7 @@
 ## Instructions to run locally:
 ### To run locally you should have npm and node in your machine
 1. Clone the project using git.
-2. write npm install in your terminal to install dependecies
+2. write npm install in your terminal to install dependencies
 3. write npm start to see the output.
 
 ## Authors

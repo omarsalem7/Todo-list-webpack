@@ -52,3 +52,7 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+.checked {
+  text-decoration: line-through;
+}

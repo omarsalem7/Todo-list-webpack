@@ -13,9 +13,8 @@ export default class Todos {
   removeTodo(todoID) {
     this.list = this.list.filter((todo) => todo.index !== todoID);
     this.list.forEach((todo, index) => {
-      todo.index = index;
+      todo.index = index + 1;
     });
-    console.log(this.list);
     localStorage.setItem('todos', JSON.stringify(this.list));
   }
 

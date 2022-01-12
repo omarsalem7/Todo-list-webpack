@@ -18,23 +18,53 @@
   color: orange;
 }
 
-.container input[type='text'] {
-  width: 94%;
-  font-style: italic;
+form {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  position: relative;
   border-top: 0.6px solid rgb(216, 216, 216);
   border-right: none;
   border-bottom: 0.6px solid rgb(216, 216, 216);
   border-left: none;
+}
+
+.todo-edit {
+  border: none;
+}
+
+form input[type='text'] {
+  border: none;
+  font-style: italic;
+  width: 85%;
   padding: 3%;
 }
 
-.container input[type='text']:focus {
+form .add-btn {
+  position: relative;
+  right: 3.2%;
+}
+
+input[type='text']:focus {
   outline: none;
 }
 
 .todo-item {
   padding: 3%;
   border-bottom: 0.6px solid rgb(216, 216, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .clear {
@@ -44,6 +74,7 @@
 }
 
 .clear a {
+  cursor: pointer;
   color: rgba(255, 166, 0, 0.507);
 }
 

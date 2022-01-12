@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wbpack Exercise</title>
+    <title>Todo list</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="container">
         <h4 class="title">Today's Todo</h4>
-        <input type="text" placeholder="Add to your List..." autofocus />
+        <form>
+            <input class="input-todo" type="text" placeholder="Add to your List..." autofocus />
+            <button class="add-btn">
+                <i class="fas fa-location-arrow"></i>
+            </button>
+        </form>
         <div class="todos">
             <!-- Add Todos Automatically -->
         </div>

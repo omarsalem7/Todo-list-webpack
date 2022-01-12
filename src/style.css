@@ -86,4 +86,5 @@ button {
 
 .checked {
   text-decoration: line-through;
+  color: rgba(129, 129, 129, 0.548);
 }

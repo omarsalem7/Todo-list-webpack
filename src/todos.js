@@ -1,3 +1,5 @@
+import completeHelper from './helper';
+
 export default class Todos {
   constructor() {
     this.list = localStorage.getItem('todos')
@@ -11,7 +13,7 @@ export default class Todos {
   }
 
   removeTodo(todoID) {
-    this.list = this.list.filter((todo) => todo.index !== todoID);
+    this.list = this.list.filter((todo) => todo.id !== todoID);
     this.list.forEach((todo, index) => {
       todo.index = index + 1;
     });
@@ -20,11 +22,23 @@ export default class Todos {
 
   editTodo(todoId, todoDescription) {
     const newData = this.list.map((todo) => {
-      if (todo.index === todoId) {
+      if (todo.id === todoId) {
         return { ...todo, description: todoDescription };
       }
       return todo;
     });
     localStorage.setItem('todos', JSON.stringify(newData));
+  }
+
+  completeTodo(todoId, status) {
+    completeHelper(this.list, todoId, status);
+  }
+
+  clearCompletedTodos() {
+    this.list = this.list.filter((todo) => !todo.completed);
+    this.list.forEach((todo, index) => {
+      todo.index = index + 1;
+    });
+    localStorage.setItem('todos', JSON.stringify(this.list));
   }
 }

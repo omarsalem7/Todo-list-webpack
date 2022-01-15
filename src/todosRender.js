@@ -29,7 +29,15 @@ const render = (todosList) => {
   // edit todo
   const todosContent = document.querySelectorAll('.todo-edit');
   todosContent.forEach((todo) => {
-    todo.addEventListener('change', (e) => {
+    todo.addEventListener('focusin', (e) => {
+      e.target.parentNode.parentNode.style.background = 'rgb(241,240,204)';
+      e.target.style.background = 'rgb(241,240,204)';
+    });
+    todo.addEventListener('focusout', (e) => {
+      e.target.style.background = 'white';
+      e.target.parentNode.parentNode.style.background = 'white';
+    });
+    todo.addEventListener('input', (e) => {
       todosList.editTodo(e.target.id, e.target.value);
     });
   });

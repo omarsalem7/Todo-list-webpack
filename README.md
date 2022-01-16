@@ -13,6 +13,8 @@
 - JavaScript
 - Linters
 
+## Live Demo
+[Todos-Live](https://omarsalem7.github.io/Todo-list-webpack/)
 ## Instructions to run locally:
 ### To run locally you should have npm and node in your machine
 1. Clone the project using git.

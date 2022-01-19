@@ -90,3 +90,13 @@ describe('complete test', () => {
     expect(todoList.list).toHaveLength(4);
   });
 });
+
+describe('Clear all completed', () => {
+  test('clear items completed', () => {
+    const todoList = new Todos();
+    todoList.clearCompletedTodos();
+    expect(todoList.list).toHaveLength(3);
+    expect(todoList.list[1].completed).toBeFalsy();
+  });
+});
+

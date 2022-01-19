@@ -20,8 +20,8 @@ document.body.innerHTML = `
  </div>
  </div>
   `;
+
 describe('add and remove', () => {
-  // mock Localstorage
   window.localStorage = Storage.prototype;
   test('Add task', () => {
     const todoList = new Todos();

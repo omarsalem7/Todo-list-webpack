@@ -99,4 +99,3 @@ describe('Clear all completed', () => {
     expect(todoList.list[1].completed).toBeFalsy();
   });
 });
-

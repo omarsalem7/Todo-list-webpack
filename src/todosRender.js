@@ -2,15 +2,15 @@ const render = (todosList) => {
   const sortedTodos = todosList.list.sort((a, b) => a.index - b.index);
   const todosContainer = document.querySelector('.todos');
   let todosHtml = '';
-  sortedTodos.forEach((todo) => {
-    const checkedTodo = todo.completed ? 'checked' : '';
-    const checkClass = todo.completed ? 'checked' : '';
+  sortedTodos.forEach(({ completed, description, id }) => {
+    const checkedTodo = completed ? 'checked' : '';
+    const checkClass = completed ? 'checked' : '';
     todosHtml += `  <div class="todo-item">
                         <div>
-                            <input id="${todo.id}" class="todo-check" type="checkbox" ${checkedTodo} />
-                            <input id="${todo.id}" class="todo-edit ${checkClass}" type="text" value="${todo.description}" />
+                            <input id="${id}" class="todo-check" type="checkbox" ${checkedTodo} />
+                            <input id="${id}" class="todo-edit ${checkClass}" type="text" value="${description}" />
                         </div>
-                        <button id="${todo.id}" class="remove-btn"> <i class="fas fa-trash"></i></button>
+                        <button id="${id}" class="remove-btn"> <i class="fas fa-trash"></i></button>
                     </div>
     `;
   });

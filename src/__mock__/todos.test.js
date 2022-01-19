@@ -43,4 +43,18 @@ describe('add and remove', () => {
     expect(todoList.list).toHaveLength(2);
     expect(todoList.list[1].description).toBe('task2');
   });
+
+  test('remove task', () => {
+    const todoList = new Todos();
+    const newTodo = {
+      id: 'id4d5sa',
+      description: 'task3',
+      completed: false,
+      index: 3,
+    };
+    todoList.addTodo(newTodo);
+    todoList.removeTodo(newTodo.id);
+    expect(todoList.list[1].description).toBe('task2');
+    expect(todoList.list).toHaveLength(2);
+  });
 });

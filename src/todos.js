@@ -19,13 +19,13 @@ export default class Todos {
   }
 
   editTodo(todoId, todoDescription) {
-    const newData = this.list.map((todo) => {
+    this.list = this.list.map((todo) => {
       if (todo.id === todoId) {
         return { ...todo, description: todoDescription };
       }
       return todo;
     });
-    localStorage.setItem('todos', JSON.stringify(newData));
+    localStorage.setItem('todos', JSON.stringify(this.list));
   }
 
   completeTodo(todoId, status) {

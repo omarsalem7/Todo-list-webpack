@@ -4,7 +4,7 @@
 
 > This website Todo-list-webpack provides users a convenient way to keep track of their todos.
 
-![screenshot](./screen.png)
+![screenshot](./screen.gif)
 
 ## Built With
 
@@ -34,7 +34,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/omarsalem7/Todo-list-webpack/issues).
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 

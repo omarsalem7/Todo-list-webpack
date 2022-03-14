@@ -14,7 +14,7 @@
 - Linters
 
 ## Live Demo
-[GitHub Pages](https://omarsalem7.github.io/Todo-list-webpack/)
+[GitHub Pages](https://omarsalem7.github.io/Todo-list-webpack/)<br/>
 [Netlify](https://todo-webpack-v1.netlify.app/)
 ## Instructions to run locally:
 ### To run locally you should have npm and node in your machine

@@ -88,3 +88,9 @@ button {
   text-decoration: line-through;
   color: rgba(129, 129, 129, 0.548);
 }
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 70%;
+  }
+}

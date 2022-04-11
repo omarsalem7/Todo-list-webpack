@@ -8,7 +8,11 @@
 
 ## Built With
 
-- Major languages (HTML, CSS, JavaScript)
+- Major languages 
+  ```bash
+  - (HTML, CSS, JavaScript)
+  ```
+
 
 - Frameworks / Libraries
   ```bash

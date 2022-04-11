@@ -2,25 +2,58 @@
 
 # Todo-list-webpack
 
-> This website Todo-list-webpack provides users a convenient way to keep track of their todos.
+> Todo App is for listing tasks. These tasks are stored in the local storage and can be marked as completed, edited and deleted. It is built using JavaScript, jest, HTML and CSS.
 
 ![screenshot](./screen.gif)
 
 ## Built With
 
-- HTML
-- CSS
-- JavaScript
-- Linters
+- Major languages (HTML, CSS, JavaScript)
+
+- Frameworks / Libraries
+  ```bash
+  - Jest
+  ```
+  
+  - Technologies used 
+  
+  ``` bash
+  - Git(version control)
+  ```
 
 ## Live Demo
 [GitHub Pages](https://omarsalem7.github.io/Todo-list-webpack/)<br/>
 [Netlify](https://todo-webpack-v1.netlify.app/)
-## Instructions to run locally:
-### To run locally you should have npm and node in your machine
-1. Clone the project using git.
-2. write npm install in your terminal to install dependencies
-3. write npm start to see the output.
+
+
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+ - A text editor(preferably Visual Studio Code)
+
+### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
+### Usage
+#### Clone this repository
+
+```bash
+$ git clone https://github.com/omarsalem7/Todo-list-webpack.git
+$ cd Todo-list-webpack 
+```
+#### Run project
+
+```bash
+$ npm install
+$ npm build
+$ npm start
+```
+
+#### Open page in browser
+```bash
+$ runs on http://localhost:3000/
+```
 
 ## Authors
 

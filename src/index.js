@@ -12,7 +12,6 @@ addTodoBtn.addEventListener('click', () => {
   const description = document.querySelector('.input-todo').value.trim();
   const completed = false;
   const index = todosList.list.length + 1;
-
   const newTodo = {
     id, description, completed, index,
   };

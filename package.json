@@ -42,5 +42,8 @@
   "dependencies": {
     "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }

@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Todo-webpack-blueviolet)
+![](https://img.shields.io/badge/To-do-webpack-blueviolet)
 
 # Todo-list-webpack
 

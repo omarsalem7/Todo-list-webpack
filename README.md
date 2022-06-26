@@ -10,7 +10,7 @@
 
 - Major languages 
   ```bash
-  - (HTML, CSS, JavaScript)
+  - (HTML, CSS, JavaScript, webpack)
   ```
 
 
